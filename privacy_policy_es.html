@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Politica de Privacidad - Cronos</title>
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --panel: #12161b;
+      --text: #e8edf2;
+      --muted: #a8b3be;
+      --accent: #47f57c;
+      --border: #24303a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: radial-gradient(circle at top, #13211a 0%, var(--bg) 55%);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    main {
+      max-width: 900px;
+      margin: 32px auto;
+      padding: 24px;
+      background: color-mix(in oklab, var(--panel) 92%, black);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+    h1, h2 { color: var(--accent); }
+    h1 { margin-top: 0; }
+    p, li { color: var(--text); }
+    .muted { color: var(--muted); }
+    code {
+      background: #0d1216;
+      border: 1px solid var(--border);
+      padding: 1px 5px;
+      border-radius: 5px;
+    }
+    a { color: #7ee8ff; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Politica de Privacidad - Cronos</h1>
+    <p class="muted">Ultima actualizacion: 23 de febrero de 2026</p>
+
+    <h2>1. Informacion general</h2>
+    <p>
+      Cronos es un juego narrativo interactivo para Android que puede conectarse a un backend
+      en internet para generar contenido de juego y mantener continuidad de partida.
+    </p>
+    <p>
+      Responsable del tratamiento: <code>MLCM</code><br>
+      Contacto de privacidad/soporte: <code>nlarrain@mlcm.cl</code><br>
+      Sitio web (opcional): <code>www.mlcm.cl</code>
+    </p>
+
+    <h2>2. Datos que se pueden procesar</h2>
+    <ul>
+      <li>Texto ingresado por el usuario dentro del juego (comandos y mensajes).</li>
+      <li>Historial reciente de la partida (mensajes del usuario y respuestas del juego).</li>
+      <li>Identificador de sesion generado por la aplicacion (UUID).</li>
+      <li>Configuracion local de la app (URL del backend, sesion actual y respaldo local).</li>
+      <li>Metadatos tecnicos minimos para operacion y diagnostico.</li>
+    </ul>
+    <p>La app Android usa permiso de red (<code>INTERNET</code>) para comunicarse con el backend.</p>
+
+    <h2>3. Finalidad</h2>
+    <ul>
+      <li>Ejecutar la funcionalidad principal del juego narrativo.</li>
+      <li>Permitir continuidad de la partida.</li>
+      <li>Recuperar historial de partida.</li>
+      <li>Generar respuestas narrativas del juego.</li>
+      <li>Mejorar estabilidad y diagnosticar fallos.</li>
+      <li>Proteger el backend frente a acceso no autorizado (token opcional).</li>
+    </ul>
+
+    <h2>4. Donde se almacenan los datos</h2>
+    <p>En el dispositivo del usuario, la app puede guardar historial de partida, configuracion y respaldo local para continuidad.</p>
+    <p>
+      Los datos de sesion pueden almacenarse temporalmente en infraestructura del backend
+      para mantener continuidad de juego.
+    </p>
+    <p>Segun configuracion del operador, el backend puede usar archivos locales del servidor o DynamoDB.</p>
+
+    <h2>5. Retencion</h2>
+    <p>Periodo de retencion objetivo del backend: hasta 14 dias (configurable por el operador).</p>
+
+    <h2>6. Servicios de terceros</h2>
+    <p>No se venden datos personales.</p>
+    <p>
+      Para generar contenido narrativo, el backend puede enviar partes del historial de partida
+      y el comando del usuario a un proveedor de IA (por ejemplo, OpenAI o un endpoint compatible
+      configurado por el operador del backend).
+    </p>
+    <p>Tambien pueden usarse proveedores de infraestructura (hosting, base de datos, red) para operar el servicio.</p>
+
+    <h2>7. Seguridad</h2>
+    <p>
+      Se aplican medidas razonables de seguridad, incluyendo uso de HTTPS en produccion
+      y controles operativos de acceso al backend (token opcional).
+    </p>
+    <p>No se puede garantizar seguridad absoluta.</p>
+
+    <h2>8. Menores de edad</h2>
+    <p>
+      La app no esta dirigida a menores de 13 anos sin supervision de un adulto.
+    </p>
+    <p>Si corresponde legalmente, se podran eliminar datos cuando se solicite y sea verificable.</p>
+
+    <h2>9. Derechos del usuario</h2>
+    <p>
+      Para consultas o solicitudes relacionadas con datos de sesion (por ejemplo, eliminacion),
+      contacta al soporte en <code>COMPLETAR_EMAIL</code>.
+    </p>
+    <p>Puede ayudarte incluir <code>session_id</code>, fecha aproximada y URL del backend usado.</p>
+
+    <h2>10. Cambios a esta politica</h2>
+    <p>
+      Esta politica puede actualizarse. La version vigente se publicara en la misma URL.
+    </p>
+
+    <h2>11. Contacto</h2>
+    <p>
+      Email: <code>nlarrain@mlcm.cl</code><br>
+      Pais: <code>Chile</code>
+    </p>
+  </main>
+</body>
+</html>
